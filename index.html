@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Flowers Garden - Floricultura</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <i class="bi bi-flower1"></i>
+                    <h1>The Flowers Garden</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home">Início</a></li>
+                    <li><a href="#products">Produtos</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                    <li class="cart-icon">
+                        <a href="#" id="cartToggle">
+                            <i class="bi bi-cart3"></i>
+                            <span class="cart-count">0</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Meu Carrinho</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Itens do carrinho aparecerão aqui -->
+            <div class="empty-cart">
+                <i class="bi bi-cart-x"></i>
+                <p>Seu carrinho está vazio</p>
+            </div>
+        </div>
+        <div class="cart-total">
+            <div class="total-line">
+                <span>Subtotal:</span>
+                <span id="subtotal">R$ 0,00</span>
+            </div>
+            <div class="total-line">
+                <span>Frete:</span>
+                <span id="shipping">R$ 0,00</span>
+            </div>
+            <div class="total-line final">
+                <span>Total:</span>
+                <span id="total">R$ 0,00</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn" disabled>Finalizar Compra</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>Flores Frescas para Cada Estação</h2>
+                <p>Descubra a beleza natural em nossa seleção exclusiva de flores e arranjos especiais</p>
+                <a href="#products" class="btn">Ver Produtos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <div class="products-grid">
+                <!-- Produto 1 - ROSAS -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Buquê de Rosas">
+                    </div>
+                    <div class="product-info">
+                        <h3>Buquê de Rosas</h3>
+                        <p>12 rosas vermelhas premium com folhagem decorativa</p>
+                        <div class="price">R$ 89,90</div>
+                        <button class="add-to-cart" 
+                                data-id="1" 
+                                data-name="Buquê de Rosas" 
+                                data-price="89.90"
+                                data-image="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 2 - GIRASSÓIS -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/Girassois.png" alt="Girassóis">
+                    </div>
+                    <div class="product-info">
+                        <h3>Girassóis</h3>
+                        <p>Arranjo vibrante com girassóis da estação</p>
+                        <div class="price">R$ 65,00</div>
+                        <button class="add-to-cart" 
+                                data-id="2" 
+                                data-name="Girassóis" 
+                                data-price="65.00"
+                                data-image="https://images.unsplash.com/photo-1592663527350-c1d0d51063a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 3 - ORQUÍDEA BRANCA -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="assets/orquideaBranca.webp" alt="Orquídea Branca">
+                    </div>
+                    <div class="product-info">
+                        <h3>Orquídea Branca</h3>
+                        <p>Elegante orquídea branca em vaso decorativo</p>
+                        <div class="price">R$ 75,00</div>
+                        <button class="add-to-cart" 
+                                data-id="3" 
+                                data-name="Orquídea Branca" 
+                                data-price="75.00"
+                                data-image="https://images.unsplash.com/photo-1563225457-62ce04b8f2e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 4 - FLORES DO CAMPO -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Flores do Campo">
+                    </div>
+                    <div class="product-info">
+                        <h3>Flores do Campo</h3>
+                        <p>Mix encantador de flores silvestres da estação</p>
+                        <div class="price">R$ 55,00</div>
+                        <button class="add-to-cart" 
+                                data-id="4" 
+                                data-name="Flores do Campo" 
+                                data-price="55.00"
+                                data-image="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 5 - LÍRIOS -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Lírios">
+                    </div>
+                    <div class="product-info">
+                        <h3>Lírios</h3>
+                        <p>Lírios frescos com aroma delicado e encantador</p>
+                        <div class="price">R$ 70,00</div>
+                        <button class="add-to-cart" 
+                                data-id="5" 
+                                data-name="Lírios" 
+                                data-price="70.00"
+                                data-image="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Produto 6 - CACTOS E SUCULENTAS -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cactos e Suculentas">
+                    </div>
+                    <div class="product-info">
+                        <h3>Cactos e Suculentas</h3>
+                        <p>Kit com 3 cactos e suculentas para decorar</p>
+                        <div class="price">R$ 45,00</div>
+                        <button class="add-to-cart" 
+                                data-id="6" 
+                                data-name="Cactos e Suculentas" 
+                                data-price="45.00"
+                                data-image="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                            Adicionar ao Carrinho
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre The Flowers Garden</h2>
+                    <p>Iniciamos no ano de 2025, The Flowers Garden tem a função de ser o destino preferido para amantes de flores que buscam qualidade, beleza e atendimento excepcional.</p>
+                    <p>Nossa missão é levar a natureza para dentro de sua casa, com flores frescas e arranjos cuidadosamente preparados por nossos especialistas.</p>
+                    <p>Trabalhamos com produtores locais e praticamos comércio sustentável, garantindo que cada flor tenha uma história bonita por trás.</p>
+                </div>
+                <div class="about-features">
+                    <div class="feature">
+                        <i class="bi bi-truck"></i>
+                        <h4>Entrega Rápida</h4>
+                        <p>Entregamos em até 2 horas na região metropolitana</p>
+                    </div>
+                    <div class="feature">
+                        <i class="bi bi-flower2"></i>
+                        <h4>Flores Frescas</h4>
+                        <p>Selecionamos as melhores flores diretamente dos produtores</p>
+                    </div>
+                    <div class="feature">
+                        <i class="bi bi-heart"></i>
+                        <h4>Feito com Amor</h4>
+                        <p>Cada arranjo é preparado com carinho e atenção aos detalhes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Entre em Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="bi bi-geo-alt"></i>
+                        <div>
+                            <h4>Endereço</h4>
+                            <p>Rua das Flores, 456<br>Buritis<br>Belo Horizonte - MG</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-telephone"></i>
+                        <div>
+                            <h4>Telefone</h4>
+                            <p>(11) 3456-7890</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-envelope"></i>
+                        <div>
+                            <h4>E-mail</h4>
+                            <p>contato@theflowersgarden.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="bi bi-clock"></i>
+                        <div>
+                            <h4>Horário</h4>
+                            <p>Segunda a Sábado: 8h às 18h<br>Domingo: 9h às 13h</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <h4>Envie uma Mensagem</h4>
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu e-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Assunto" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Sua mensagem" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>The Flowers Garden</h3>
+                    <p>Levando beleza e natureza para sua vida todos os dias.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#products">Produtos</a></li>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#">Entrega Express</a></li>
+                        <li><a href="#">Assinatura Mensal</a></li>
+                        <li><a href="#">Eventos Corporativos</a></li>
+                        <li><a href="#">Decoração</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Flowers Garden. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
