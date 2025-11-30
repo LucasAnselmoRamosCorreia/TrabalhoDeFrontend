@@ -1,7 +1,7 @@
-
+// Carrinho de Compras
 let cart = [];
 
-
+// Elementos do DOM
 const cartToggle = document.getElementById('cartToggle');
 const closeCart = document.getElementById('closeCart');
 const cartOverlay = document.getElementById('cartOverlay');
@@ -146,7 +146,7 @@ function showNotification(message) {
     }, 3000);
 }
 
-
+// Event Listeners
 cartToggle.addEventListener('click', (e) => {
     e.preventDefault();
     openCart();
@@ -169,7 +169,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-
+// Menu Mobile
 const hamburger = document.querySelector('.hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -178,7 +178,7 @@ hamburger.addEventListener('click', () => {
     navMenu.classList.toggle('active');
 });
 
-
+// Fechar menu ao clicar em um link
 document.querySelectorAll('.nav-menu a').forEach(link => {
     link.addEventListener('click', () => {
         hamburger.classList.remove('active');
@@ -186,7 +186,7 @@ document.querySelectorAll('.nav-menu a').forEach(link => {
     });
 });
 
-
+// Smooth Scroll
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -200,14 +200,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-
+// Formulário de Contato
 document.getElementById('contactForm').addEventListener('submit', function(e) {
     e.preventDefault();
     alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
     this.reset();
 });
 
-
+// CSS para animações
 const style = document.createElement('style');
 style.textContent = `
     @keyframes slideIn {
@@ -335,4 +335,10 @@ style.textContent = `
         background: #ffe6e6;
     }
 `;
+
+document.getElementById("subscriptionForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    alert("Assinatura realizada com sucesso! 🌸");
+});
+
 document.head.appendChild(style);

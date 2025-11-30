@@ -576,7 +576,7 @@ footer {
     cursor: not-allowed;
 }
 
-
+/* Responsividade */
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -616,4 +616,80 @@ footer {
     .products-grid {
         grid-template-columns: 1fr;
     }
+}
+/* Subscription Section */
+.subscription {
+    padding: 60px 0;
+    background: #fff5f8;
+}
+
+.subscription-text {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 30px;
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.subscription-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.subscription-form {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.subscription-form h4 {
+    margin-bottom: 20px;
+}
+
+.subscription-form .form-group {
+    margin-bottom: 15px;
+}
+
+.subscription-form input,
+.subscription-form select,
+.subscription-form textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+}
+
+.subscription-info {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.subscription-info h3 {
+    margin: 10px 0 20px;
+}
+
+.subscription-info ul {
+    list-style: none;
+    padding: 0;
+}
+
+.subscription-info ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.subscription-icon {
+    font-size: 70px;
+    color: #e91e63;
 }

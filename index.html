@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Flowers Garden - Floricultura</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap -->
+    <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 </head>
+
 <body>
-    
+    <!-- Header -->
     <header>
         <nav class="navbar">
             <div class="nav-container">
@@ -38,14 +40,14 @@
         </nav>
     </header>
 
-    
+    <!-- Cart Sidebar -->
     <div class="cart-sidebar" id="cartSidebar">
         <div class="cart-header">
             <h3>Meu Carrinho</h3>
             <button class="close-cart" id="closeCart">&times;</button>
         </div>
         <div class="cart-items" id="cartItems">
-            
+            <!-- Itens do carrinho aparecerão aqui -->
             <div class="empty-cart">
                 <i class="bi bi-cart-x"></i>
                 <p>Seu carrinho está vazio</p>
@@ -69,7 +71,7 @@
     </div>
     <div class="cart-overlay" id="cartOverlay"></div>
 
-    
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
@@ -88,17 +90,15 @@
                 <!-- Produto 1 - ROSAS -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Buquê de Rosas">
+                        <img src="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                            alt="Buquê de Rosas">
                     </div>
                     <div class="product-info">
                         <h3>Buquê de Rosas</h3>
                         <p>12 rosas vermelhas premium com folhagem decorativa</p>
                         <div class="price">R$ 89,90</div>
-                        <button class="add-to-cart" 
-                                data-id="1" 
-                                data-name="Buquê de Rosas" 
-                                data-price="89.90"
-                                data-image="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                        <button class="add-to-cart" data-id="1" data-name="Buquê de Rosas" data-price="89.90"
+                            data-image="https://images.unsplash.com/photo-1519378058457-4c29a0a2efac?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
                             Adicionar ao Carrinho
                         </button>
                     </div>
@@ -113,11 +113,8 @@
                         <h3>Girassóis</h3>
                         <p>Arranjo vibrante com girassóis da estação</p>
                         <div class="price">R$ 65,00</div>
-                        <button class="add-to-cart" 
-                                data-id="2" 
-                                data-name="Girassóis" 
-                                data-price="65.00"
-                                data-image="https://images.unsplash.com/photo-1592663527350-c1d0d51063a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                        <button class="add-to-cart" data-id="2" data-name="Girassóis" data-price="65.00"
+                            data-image="https://images.unsplash.com/photo-1592663527350-c1d0d51063a9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
                             Adicionar ao Carrinho
                         </button>
                     </div>
@@ -132,11 +129,8 @@
                         <h3>Orquídea Branca</h3>
                         <p>Elegante orquídea branca em vaso decorativo</p>
                         <div class="price">R$ 75,00</div>
-                        <button class="add-to-cart" 
-                                data-id="3" 
-                                data-name="Orquídea Branca" 
-                                data-price="75.00"
-                                data-image="https://images.unsplash.com/photo-1563225457-62ce04b8f2e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                        <button class="add-to-cart" data-id="3" data-name="Orquídea Branca" data-price="75.00"
+                            data-image="https://images.unsplash.com/photo-1563225457-62ce04b8f2e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
                             Adicionar ao Carrinho
                         </button>
                     </div>
@@ -145,17 +139,15 @@
                 <!-- Produto 4 - FLORES DO CAMPO -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Flores do Campo">
+                        <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                            alt="Flores do Campo">
                     </div>
                     <div class="product-info">
                         <h3>Flores do Campo</h3>
                         <p>Mix encantador de flores silvestres da estação</p>
                         <div class="price">R$ 55,00</div>
-                        <button class="add-to-cart" 
-                                data-id="4" 
-                                data-name="Flores do Campo" 
-                                data-price="55.00"
-                                data-image="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                        <button class="add-to-cart" data-id="4" data-name="Flores do Campo" data-price="55.00"
+                            data-image="https://images.unsplash.com/photo-1490750967868-88aa4486c946?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
                             Adicionar ao Carrinho
                         </button>
                     </div>
@@ -164,17 +156,15 @@
                 <!-- Produto 5 - LÍRIOS -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Lírios">
+                        <img src="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                            alt="Lírios">
                     </div>
                     <div class="product-info">
                         <h3>Lírios</h3>
                         <p>Lírios frescos com aroma delicado e encantador</p>
                         <div class="price">R$ 70,00</div>
-                        <button class="add-to-cart" 
-                                data-id="5" 
-                                data-name="Lírios" 
-                                data-price="70.00"
-                                data-image="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                        <button class="add-to-cart" data-id="5" data-name="Lírios" data-price="70.00"
+                            data-image="https://images.unsplash.com/photo-1563241527-3004b7be0ffd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
                             Adicionar ao Carrinho
                         </button>
                     </div>
@@ -183,17 +173,15 @@
                 <!-- Produto 6 - CACTOS E SUCULENTAS -->
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80" alt="Cactos e Suculentas">
+                        <img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80"
+                            alt="Cactos e Suculentas">
                     </div>
                     <div class="product-info">
                         <h3>Cactos e Suculentas</h3>
                         <p>Kit com 3 cactos e suculentas para decorar</p>
                         <div class="price">R$ 45,00</div>
-                        <button class="add-to-cart" 
-                                data-id="6" 
-                                data-name="Cactos e Suculentas" 
-                                data-price="45.00"
-                                data-image="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
+                        <button class="add-to-cart" data-id="6" data-name="Cactos e Suculentas" data-price="45.00"
+                            data-image="https://images.unsplash.com/photo-1485955900006-10f4d324d411?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=80">
                             Adicionar ao Carrinho
                         </button>
                     </div>
@@ -201,16 +189,95 @@
             </div>
         </div>
     </section>
+    <!-- Subscription Section -->
+    <section class="subscription" id="subscription">
+        <div class="container">
+            <h2 class="section-title">Assinatura Mensal de Flores</h2>
+            <p class="subscription-text">
+                Receba flores selecionadas especialmente para cada estação do ano, entregues diretamente na sua casa.
+                Escolha o plano ideal para você e aproveite a beleza das flores todos os meses.
+            </p>
 
-    
+            <div class="subscription-content">
+                <form class="subscription-form" id="subscriptionForm">
+                    <h4>Cadastre-se Agora</h4>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Seu nome completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="email" placeholder="Seu e-mail" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" placeholder="Endereço completo" required>
+                    </div>
+
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Selecione o plano</option>
+                            <option value="simples">Plano Simples - R$ 49,90/mês</option>
+                            <option value="premium">Plano Premium - R$ 89,90/mês</option>
+                            <option value="luxo">Plano Luxo - R$ 129,90/mês</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Estação preferida</option>
+                            <option value="primavera">Primavera</option>
+                            <option value="verao">Verão</option>
+                            <option value="outono">Outono</option>
+                            <option value="inverno">Inverno</option>
+                            <option value="surpresa">Surpresa (mistura de estações)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <select required>
+                            <option value="" disabled selected>Frequência de entrega</option>
+                            <option value="mensal">1 vez por mês</option>
+                            <option value="quinzenal">A cada 15 dias</option>
+                            <option value="semanal">1 vez por semana</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <textarea placeholder="Observações (opcional)" rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn">Assinar Agora</button>
+                </form>
+
+                <div class="subscription-info">
+                    <i class="bi bi-gift subscription-icon"></i>
+                    <h3>Por que assinar?</h3>
+                    <ul>
+                        <li>Flores frescas selecionadas a dedo</li>
+                        <li>Arranjos exclusivos da estação</li>
+                        <li>Entrega garantida na sua casa</li>
+                        <li>Cancelamento simples e rápido</li>
+                        <li>Brindes e benefícios exclusivos para assinantes</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
             <div class="about-content">
                 <div class="about-text">
                     <h2>Sobre The Flowers Garden</h2>
-                    <p>Iniciamos no ano de 2025, The Flowers Garden tem a função de ser o destino preferido para amantes de flores que buscam qualidade, beleza e atendimento excepcional.</p>
-                    <p>Nossa missão é levar a natureza para dentro de sua casa, com flores frescas e arranjos cuidadosamente preparados por nossos especialistas.</p>
-                    <p>Trabalhamos com produtores locais e praticamos comércio sustentável, garantindo que cada flor tenha uma história bonita por trás.</p>
+                    <p>Iniciamos no ano de 2025, The Flowers Garden tem a função de ser o destino preferido para amantes
+                        de flores que buscam qualidade, beleza e atendimento excepcional.</p>
+                    <p>Nossa missão é levar a natureza para dentro de sua casa, com flores frescas e arranjos
+                        cuidadosamente preparados por nossos especialistas.</p>
+                    <p>Trabalhamos com produtores locais e praticamos comércio sustentável, garantindo que cada flor
+                        tenha uma história bonita por trás.</p>
                 </div>
                 <div class="about-features">
                     <div class="feature">
@@ -288,7 +355,7 @@
         </div>
     </section>
 
-    
+    <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
@@ -328,4 +395,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
