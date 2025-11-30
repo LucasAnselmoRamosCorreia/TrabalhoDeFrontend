@@ -576,7 +576,7 @@ footer {
     cursor: not-allowed;
 }
 
-/* Responsividade */
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
