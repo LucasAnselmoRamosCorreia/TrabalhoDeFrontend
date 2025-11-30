@@ -16,4 +16,6 @@ Cálculo Automático: Subtotal, frete e total calculados em tempo real
 Sidebar Interativa: Carrinho deslizante com overlay escuro
 
 Notificações: Feedback visual ao adicionar itens
+
+Integrantes do grupo: Lucas Anselmo, Camila, Maria Eduarda Seabra, Gabriel Oliveira, Gustava Eduardo
 >>>>>>> 5cf4375c42e76baad5eff378aa9ba4bd72cb74f7
